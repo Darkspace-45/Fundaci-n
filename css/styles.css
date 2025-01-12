@@ -42,7 +42,6 @@ header nav a:hover {
     color: #00bcd4;
 }
 
-/* Hero section: Ajustes en el contenedor y el fondo */
 .hero {
     display: flex;
     justify-content: space-between;
