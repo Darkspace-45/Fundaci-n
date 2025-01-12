@@ -141,14 +141,12 @@ header nav a:hover {
     opacity: 0;
 }
 
-/* Cuadros de Información */
 .info-cards {
     display: flex;
     justify-content: space-between;
     gap: 2rem;
     padding: 4rem 3rem;
     flex-wrap: wrap;
-    /* Permite que se ajusten en pantallas pequeñas */
 }
 
 .card {
@@ -225,6 +223,9 @@ header nav a:hover {
     color: #00bcd4;
     font-weight: bold;
     font-size: 1.1rem;
+    background-color: #000;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
 }
 
 .card:hover {
