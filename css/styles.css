@@ -85,7 +85,6 @@ header nav a:hover {
     background-color: #333;
 }
 
-/* Media section: Fondo de imagen con blur */
 .hero .media {
     position: absolute;
     top: 0;
@@ -100,17 +99,18 @@ header nav a:hover {
     transition: opacity 1s ease-out;
 }
 
-/* Fondo de la primera imagen */
 .hero .media:first-child {
     background-image: url('img/pest.jpg');
 }
 
-/* Fondo de la segunda imagen */
 .hero .media:nth-child(2) {
     background-image: url('img/post.jpg');
 }
 
-/* Ajuste de la visibilidad de las imágenes */
+.hero .media:nth-child(3) {
+    background-image: url('img/past.jpg');
+}   
+
 .image-container {
     position: relative;
     width: 860px;
