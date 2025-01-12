@@ -109,7 +109,7 @@ header nav a:hover {
 
 .hero .media:nth-child(3) {
     background-image: url('img/past.jpg');
-}   
+}
 
 .image-container {
     position: relative;
@@ -269,17 +269,49 @@ footer .newsletter-card input[type="email"] {
 }
 
 footer .newsletter-card button[type="submit"] {
-    background-color: #00bcd4;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 0.5rem 1rem;
+    --color: #14213d;
+    /* Color principal */
+    font-family: inherit;
+    display: inline-block;
+    width: 6em;
+    height: 2.6em;
+    line-height: 2.5em;
+    overflow: hidden;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    margin: 20px auto;
+    /* Centra el botón dentro del formulario */
+    font-size: 17px;
+    z-index: 1;
+    color: var(--color);
+    border: 2px solid var(--color);
+    border-radius: 6px;
+    position: relative;
+    text-align: center;
+}
+
+footer .newsletter-card button[type="submit"]::before {
+    position: absolute;
+    content: "";
+    background: var(--color);
+    width: 150px;
+    height: 200px;
+    z-index: -1;
+    border-radius: 50%;
 }
 
 footer .newsletter-card button[type="submit"]:hover {
-    background-color: #333;
+    color: white;
+}
+
+footer .newsletter-card button[type="submit"]::before {
+    top: 100%;
+    left: 100%;
+    transition: 0.3s all;
+}
+
+footer .newsletter-card button[type="submit"]:hover::before {
+    top: -30px;
+    left: -30px;
 }
 
 footer .footer-location {
