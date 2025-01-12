@@ -43,7 +43,7 @@ var imageContainerImages = imageContainer.querySelectorAll('.image');
 var currentIndex = 0;
 
 // Establece el tiempo de transición entre imágenes
-var transitionTime = 3000; // 3 segundos
+var transitionTime = 5000; // 3 segundos
 
 // Función para cambiar la imagen actual
 function changeImage() {
@@ -64,3 +64,18 @@ function changeImage() {
 
 // Establece un intervalo para cambiar la imagen cada 3 segundos
 setInterval(changeImage, transitionTime);
+
+document.addEventListener('DOMContentLoaded', () => {
+    const images = document.querySelectorAll('.image-container .image');
+    let currentIndex = 0;
+
+    function changeImage() {
+        images[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex + 1) % images.length; // Pasa a la siguiente imagen
+        images[currentIndex].classList.add('active');
+    }
+
+    // Cambia de imagen cada 5 segundos (ajusta el tiempo si lo necesitas)
+    setInterval(changeImage, 5000);
+});
+
