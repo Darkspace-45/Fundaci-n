@@ -13,20 +13,26 @@
     <header>
         <img src="img/logo-huaira-top.png" alt="Logo">
         <nav>
-            <a href="#">Inicio</a>
-            <a href="#">Nuestra Historia, Nuestro Equipo</a>
-            <a href="#">Programas</a>
-            <a href="#">Shigra Digital</a>
-            <a href="#">Medios & Comunicados</a>
-            <a href="#">Contacto</a>
+            <a href="#" data-es="Inicio" data-en="Home">Inicio</a>
+            <a href="#" data-es="Nuestra Historia, Nuestro Equipo" data-en="Our History, Our Team">Nuestra Historia,
+                Nuestro Equipo</a>
+            <a href="#" data-es="Programas" data-en="Programs">Programas</a>
+            <a href="#" data-es="Shigra Digital" data-en="Digital Shigra">Shigra Digital</a>
+            <a href="#" data-es="Medios & Comunicados" data-en="Media & Releases">Medios & Comunicados</a>
+            <a href="#" data-es="Contacto" data-en="Contact">Contacto</a>
         </nav>
+        <button id="translate-button">
+            us
+        </button>
     </header>
 
     <section class="hero">
         <div class="content">
-            <h1>Ciberseguridad</h1>
-            <p>Todo lo que necesitas saber</p>
-            <button>Ir Ahora</button>
+            <h1 data-es="Ciberseguridad" data-en="Cybersecurity">Ciberseguridad</h1>
+            <p data-es="Todo lo que necesitas saber" data-en="Everything you need to know">Todo lo que necesitas
+                saber
+            </p>
+            <button data-es="Ir Ahora" data-en="Go Now">Ir Ahora</button>
         </div>
         <div class="media"></div>
         <div class="image-container">
@@ -39,21 +45,21 @@
     <section class="info-cards">
         <div class="card">
             <img src="img/foto1.jpg" alt="img1">
-            <h2>Card Title 1</h2>
-            <p>Description</p>
-            <a href="#">Learn More</a>
+            <h2 data-es="Título de la tarjeta 1" data-en="Card Title 1">Título de la tarjeta 1</h2>
+            <p data-es="Descripción" data-en="Description">Descripción</p>
+            <a href="#" data-es="Aprender más" data-en="Learn More">Aprender más</a>
         </div>
         <div class="card">
             <img src="img/foto2.jpg" alt="img2">
-            <h2>Card Title 2</h2>
-            <p>Description</p>
-            <a href="#">Learn More</a>
+            <h2 data-es="Título de la tarjeta 2" data-en="Card Title 2">Título de la tarjeta 2</h2>
+            <p data-es="Descripción" data-en="Description">Descripción</p>
+            <a href="#" data-es="Aprender más" data-en="Learn More">Aprender más</a>
         </div>
         <div class="card">
             <img src="img/foto3.jpg" alt="img3">
-            <h2>Card Title 3</h2>
-            <p>Description</p>
-            <a href="#">Learn More</a>
+            <h2 data-es="Título de la tarjeta 3" data-en="Card Title 3">Título de la tarjeta 3</h2>
+            <p data-es="Descripción" data-en="Description">Descripción</p>
+            <a href="#" data-es="Aprender más" data-en="Learn More">Aprender más</a>
         </div>
     </section>
 
@@ -61,28 +67,34 @@
         <img src="img/logo-huaira-top.png" alt="Logo Huaira">
 
         <div class="newsletter-card">
-            <h3>Suscríbete a nuestra Newsletter</h3>
+            <h3 data-es="Suscríbete a nuestra Newsletter" data-en="Subscribe to our Newsletter">Suscríbete a
+                nuestra
+                Newsletter</h3>
             <form action="#" method="POST">
                 <input type="email" placeholder="Ingresa tu correo" required />
-                <button type="submit">Enviar</button>
+                <button type="submit" data-es="Enviar" data-en="Send">Enviar</button>
             </form>
         </div>
 
         <div class="footer-location">
-            <h3>Ubicación</h3>
-            <p>Baquerizo Moreno 255 y Tamayo
+            <h3 data-es="Ubicación" data-en="Location">Ubicación</h3>
+            <p data-es="Baquerizo Moreno 255 y Tamayo
+                Quito 170143 – Ecuador" data-en="Baquerizo Moreno 255 and Tamayo
+                Quito 170143 – Ecuador">Baquerizo Moreno 255 y Tamayo
                 Quito 170143 – Ecuador</p>
             <iframe width="425" height="350"
                 src="https://www.openstreetmap.org/export/embed.html?bbox=-78.4893509745598%2C-0.20579204419070496%2C-78.48635762929918%2C-0.2042256441531486&amp;layer=mapnik"
                 style="border: 1px solid black"></iframe><br /><small><a
-                    href="https://www.openstreetmap.org/#map=19/-0.205009/-78.487854&amp;layers=N">Ver el mapa más
+                    href="https://www.openstreetmap.org/#map=19/-0.205009/-78.487854&amp;layers=N"
+                    data-es="Ver el mapa más grande" data-en="View larger map">Ver el mapa más
                     grande</a></small>
-            <p>Teléfono: +593 999851975</p>
-            <p>Email: contacto@huaira.com</p>
+            <p data-es="Teléfono: +593 999851975" data-en="Phone: +593 999851975">Teléfono: +593 999851975</p>
+            <p data-es="Email: contacto@huaira.com" data-en="Email: contacto@huaira.com">Email:
+                contacto@huaira.com</p>
         </div>
 
         <div class="footer-social">
-            <h3>Síguenos</h3>
+            <h3 data-es="Síguenos" data-en="Follow Us">Síguenos</h3>
             <div class="social-icons">
                 <a href="https://facebook.com" target="_blank">
                     <img src="img/facebook.svg" alt="Facebook">
@@ -99,11 +111,30 @@
             </div>
         </div>
 
-        <p>&copy; 2023 Huaira. Todos los derechos reservados.</p>
+        <p data-es="&copy; 2023 Huaira. Todos los derechos reservados."
+            data-en="&copy; 2023 Huaira. All rights reserved.">&copy; 2023 Huaira. Todos los derechos
+            reservados.</p>
     </footer>
 
+    <script>
+        const translateButton = document.getElementById('translate-button');
+        let currentLanguage = 'es';
 
-    <script src="js/script.js"></script>
+        translateButton.addEventListener('click', () => {
+            const elements = document.querySelectorAll('[data-es][data-en]');
+
+            elements.forEach(element => {
+                if (currentLanguage === 'es') {
+                    element.textContent = element.getAttribute('data-en');
+                } else {
+                    element.textContent = element.getAttribute('data-es');
+                }
+            });
+
+            currentLanguage = currentLanguage === 'es' ? 'en' : 'es';
+            translateButton.textContent = currentLanguage === 'es' ? '🇪🇸' : '🇺🇸';
+        });
+    </script>
 </body>
 
 </html>
